@@ -38,7 +38,7 @@ export default function SpaceViewer() {
             <TabsTrigger value="sky-live">The Sky Live</TabsTrigger>
             <TabsTrigger value="earth">Google Earth</TabsTrigger>
             <TabsTrigger value="flight-radar">Live Flights</TabsTrigger>
-            <TabsTrigger value="Worldview">Maps</TabsTrigger>
+            
           </TabsList>
 
           <TabsContent value="nasa" className="mt-0">
@@ -80,18 +80,7 @@ export default function SpaceViewer() {
             </Card>
           </TabsContent>
 
-          <TabsContent value="Worldview" className="mt-0">
-            <Card className="aspect-video relative">
-              {loadingTab === "Worldview" && <Skeleton className="w-full h-full absolute inset-0" />}
-              <iframe
-                src="https://classic-maps.openrouteservice.org/directions?n1=28.7041&n2=77.1025&n3=5&a=28.7041,77.1025,19.076,72.8777&b=0&c=0&k1=en-US&k2=km"
-                className="w-full h-full"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-                onLoad={() => setLoadingTab(null)}
-              />
-            </Card>
-          </TabsContent>
+          
 
           <TabsContent value="flight-radar" className="mt-0">
             <Card className="aspect-video relative">
