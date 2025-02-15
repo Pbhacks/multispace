@@ -84,7 +84,7 @@ export default function SpaceViewer() {
             <Card className="aspect-video relative">
               {loadingTab === "Worldview" && <Skeleton className="w-full h-full absolute inset-0" />}
               <iframe
-                src="https://maps.openrouteservice.org/directions?n1=28.7041&n2=77.1025&n3=5&a=28.7041,77.1025,19.076,72.8777&b=0&c=0&k1=en-US&k2=km"
+                src="https://classic-maps.openrouteservice.org/directions?n1=28.7041&n2=77.1025&n3=5&a=28.7041,77.1025,19.076,72.8777&b=0&c=0&k1=en-US&k2=km"
                 className="w-full h-full"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
